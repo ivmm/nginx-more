@@ -236,16 +236,6 @@ export DESTDIR=%{buildroot}
 	%endif
 	--with-openssl=modules/openssl-%{openssl_version} \
 	--with-http_v2_hpack_enc \
-	%if %{with modsecurity}
-		--add-dynamic-module=modules/ngx_modsecurity-%{module_modsecurity} \
-	%endif
-	--add-module=modules/ngx_headers_more-%{module_headers_more} \
-	--add-module=modules/ngx_cache_purge-%{module_cache_purge} \
-	--add-module=modules/ngx_module_vts-%{module_vts} \
-	--add-module=modules/ngx_pagespeed-%{module_ps} \
-	--add-module=modules/ngx_brotli-%{module_brotli} \
-	--add-module=modules/ngx_http_geoip2_module-%{module_geoip2} \
-	--add-module=modules/ngx_echo-%{module_echo}
 
 make
 
