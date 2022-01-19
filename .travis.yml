@@ -9,15 +9,12 @@ env:
   - dist: centos
     version: 7
     pkg_arch: x86_64
-    ngx_modules: "--with=modsecurity"
   - dist: almalinux
     version: 8
     pkg_arch: x86_64
-    ngx_modules: "--with=modsecurity"
   - dist: rockylinux/rockylinux
     version: 8
     pkg_arch: x86_64
-    ngx_modules: "--with=modsecurity"
 
 services:
   - docker
